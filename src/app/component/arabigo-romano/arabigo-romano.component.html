@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-6 mx-auto mt-5">
+        <div class="card">
+            <div class="card-body">
+                <form #numberForm="ngForm" (ngSubmit)="turn(numberForm.value)">
+                    <h1 class="text-center">¡Convierte números arábigos en números romanos!</h1>
+                    <br>
+                    <label for="">Por favor ingresa un número arábigo no mayor a mil</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control mr-auto" name="number" placeholder="Número Arábigo" [(ngModel)]="number" required autofocus>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-success ml-3" type ="submit">
+                            Convertir
+                        </button>
+                    </div>
+                </form>
+                <label for=""> El número romano es: {{romanNum}}</label>
+            </div>
+        </div>
+    </div>
+</div>
