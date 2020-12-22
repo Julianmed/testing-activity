@@ -14,7 +14,7 @@ describe('RomanNumeralsService', () => {
   });
 
   it('should translate a arabic number in roman number',()=>{
-    const romanNumber = service.translateNumberArabic({number: '777'});
+    const romanNumber = service.translateNumberArabic({number: '850'});
     expect(romanNumber).toEqual('DCCLXXVII');
-  })
+  });
 });
